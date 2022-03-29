@@ -1869,6 +1869,9 @@ if (isset($_POST['consignee_name_sep'])) {
 
 				'inspection_company_sts' =>@ $_POST['inspection_company_sts'],
 
+				'inspection_country' => @$_POST['customer_country'],
+				'inspection_phone' => $_POST['inspection_phone'],
+
 		];
 
 		$inspection_company_id = $_POST['inspection_company_id'];
@@ -2180,6 +2183,11 @@ if (isset($_POST['consignee_name_sep'])) {
 				'services_company_email' =>@ $_POST['services_company_email'],
 				'services_company_address' =>@ $_POST['services_company_address'],
 				'services_company_website' =>@ $_POST['services_company_website'],
+
+
+				'services_company_note' =>@ $_POST['services_company_note'],
+				'services_company_country' =>@ $_POST['customer_country'],
+				'services_company_phone' =>@ $_POST['services_company_phone'],
 
 
 
@@ -2994,7 +3002,7 @@ if (isset($_POST['consignee_name_sep'])) {
 			'ricksu_company_name' => $_POST['ricksu_company_name'],
 
 
-
+			'ricksu_company_address' => $_REQUEST['ricksu_company_address'],	
 			'ricksu_company_fee' => $_POST['ricksu_company_fee'],
 
 
@@ -9665,7 +9673,7 @@ $button = '<!-- Single button -->
 
 	            <form>'.$btn_edit.$btn_del.'<input type="hidden" id="table_name" value="inspection_company"><input type="hidden" id="col_name" value="inspection_company_id"><input type="hidden" id="sts_col" value="inspection_company_sts"></form>';
 
-	            $details="Email :".$row[3]."<br>Fax :".$row[4]."<br>Website :".$row[6]."<br>";
+	            $details="Email :".$row[4]."<br>Fax :".$row[3]."<br>Website :".$row[6]."<br>";
 
 
 
@@ -10072,7 +10080,7 @@ $button = '<!-- Single button -->
 
 
 
-
+	             $details="Contact Number :".$row[3]."<br>Fax :".$row[4]."<br>Phone :".$row[10]."<br>";
 
 	            $output['data'][] = array(      
 
@@ -10084,9 +10092,10 @@ $button = '<!-- Single button -->
 
 	                $row[1],
 	                $row[2], 
-	                $row[3],                    
 
+	               $details,                 
 
+	                $row[6], 
 
 	                $services_company_sts,
 
@@ -10550,8 +10559,7 @@ $button = '<!-- Single button -->
 	            $output['data'][] = array(      
 
 
-
-	                $row[0],      
+  $row[0],      
 	                $row['customer_company'],     
 
 
@@ -10581,7 +10589,11 @@ $button = '<!-- Single button -->
 
 
 
-	                $button         
+	                $button      
+
+
+
+	                     
 
 
 
@@ -10711,19 +10723,19 @@ $button = '<!-- Single button -->
 
 
 
-	               $row[1],           
+	               $row[4],           
 
 
-
+	               $row['customer_zip_code'], 
 	                $row[10],           
 
 
 
-	                $row[4],
+	                $row[1],
 
 
 
-	                $row[6],
+	                $row[3],
 
 
 
@@ -11683,55 +11695,19 @@ $button = '<!-- Single button -->
 
 
 
-	                $row[3],                    
-
-
-
-	                $row[4],                    
-
-
-
 	                $row[5],                    
-
-
-
-	                $row[6],                    
 
 
 
 	                $row[7],                    
 
 
-
-	                $row[8],                    
-
-
-
-	                $row[9],                    
-
-
-
-	                $row[10],                    
-
-
-
-	                $row[11],                    
-
-
-
-	                $row[12],                    
-
-
-
-	                $row[13],                    
-
-
-
-	                $row[14],                    
-
-
-
-	                $row[15],                    
+	                $row['shipment_company_landline'], 
+	                $row['shipment_company_mobile'],             
+	                $row['shipment_company_fax'],                    
+	                $row['shipment_company_contact_person'],                    
+					$row['shipment_company_email'],                                        
+					$row['shipment_company_other'],                    
 
 
 
@@ -11871,7 +11847,7 @@ $button = '<!-- Single button -->
 
 
 
-	                $row[2],           
+	                $row['ricksu_company_contact'],           
 
 
 

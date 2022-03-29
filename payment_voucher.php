@@ -102,7 +102,7 @@ if (isset($_REQUEST['reservation'])) {
 						<label for="">AMOUNT REMITTED FROM</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
-						<select required class="form-control select2" id="sender_country" name="sender_country">
+						<select required class="form-control select2 " id="sender_country" name="sender_country"  >
 				    		 <option>Select Country</option>
 			                                <?php
 						                    	$sql = mysqli_query($dbc,"SELECT * FROM country_regulation GROUP BY country_regulation_country");
@@ -140,7 +140,7 @@ if (isset($_REQUEST['reservation'])) {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">BANK SLIP</label>
+						<label for="">BANK RECEIPT</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<input type="file"  class="form-control" name="bank_slip" id="bank_slip">
@@ -247,7 +247,7 @@ if (isset($_REQUEST['reservation'])) {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">ACCOUNT ADDRESS</label>
+						<label for="">BANK ADDRESS</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<input type="text" required class="form-control" name="sender_account_address" id="sender_account_address">
@@ -295,7 +295,7 @@ if (isset($_REQUEST['reservation'])) {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">INTER BANK CHARGES</label>
+						<label for="">INTER BANK FEE</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<input type="number" name="inter_bank_charges" id="inter_bank_charges" class="form-control">
@@ -363,7 +363,7 @@ if (isset($_REQUEST['reservation'])) {
 				<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">LOCAL BANK CHARGES</label>
+						<label for="">LOCAL BANK FEE</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<input type="number" class="form-control" name="local_bank_charges" id="local_bank_charges">
@@ -383,7 +383,7 @@ if (isset($_REQUEST['reservation'])) {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">Payment ID</label>
+						<label for="">PAYMENT ID</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<input type="text" required name="vehicle_info" id="vehicle_info" class="form-control">
@@ -403,7 +403,7 @@ if (isset($_REQUEST['reservation'])) {
 	<div class="form-group">
 				<div class="row">
 					<div class="col-sm-5">
-						<label for="">Payement Type</label>
+						<label for="">PAYMENT TYPE</label>
 					</div><!-- col -->
 					<div class="col-sm-7">			
 						<select required name="payement_type" id="payement_type" class="form-control">
@@ -488,3 +488,9 @@ if (isset($_REQUEST['reservation'])) {
 
 include_once "includes/footer.php";
 ?>
+
+<style type="text/css">
+	.select2-container .select2-selection--single .select2-selection__rendered{
+		text-transform: uppercase;
+	}
+</style>

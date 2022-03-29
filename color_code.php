@@ -60,7 +60,7 @@ include_once "inc/code.php";
                   </div>
 								</div>
 								<div class="form-group">
-									<label for="">Color Code Status</label>
+									<label for=""> Status</label>
 									<select class="form-control" id="color_code_sts" name="color_code_sts"> 
 										<option value="">~~SELECT~~</option>
 										<option value="1">Active</option>

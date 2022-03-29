@@ -137,16 +137,20 @@
 		<tr class="">
 
 			<th>ID</th>
+			<th>Bank Name</th>
+			<th>Branch Name</th>
+			<th>Branch Code</th>
+
 
 			<th>Beneficiary Name</th>
 
 			<th>Account No</th>
 
-			<th>Bank Name</th>
+			
 
-			<th>Branch Name</th>
+			
 
-			<th>Address</th>
+			<th>Bank Contact No</th>
 
 			<th>Currency</th>
 

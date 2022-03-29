@@ -25,11 +25,6 @@ include_once "inc/code.php";
 							<form action="php_action/custom_action.php" method="POST" role="form" id="formData">
 								<div class="msg"></div>
 								<div class="form-group">
-									<label for="">Brand</label>
-									<input type="text" class="form-control" id="brand_name" name="brand_name"> 
-									<input type="text" class="form-control d-none" id="brand_id" name="brand_id"> 
-								</div>
-								<div class="form-group">
 									<label for="">Maker Name</label>
 									<select class="form-control" id="maker_id" name="maker_id"> 
 										<option value="">~~SELECT~~</option>
@@ -41,11 +36,17 @@ include_once "inc/code.php";
 									</select>
 								</div>
 								<div class="form-group">
+									<label for="">Brand</label>
+									<input type="text" class="form-control" id="brand_name" name="brand_name"> 
+									<input type="text" class="form-control d-none" id="brand_id" name="brand_id"> 
+								</div>
+								
+								<div class="form-group">
 									<label for="">M3</label>
 									<input type="text" class="form-control" id="brand_m3" name="brand_m3"> 
 								</div>
 								<div class="form-group">
-									<label for="">Brand Status</label>
+									<label for=""> Status</label>
 									<select class="form-control" id="brand_status" name="brand_status"> 
 										<option value="">~~SELECT~~</option>
 										<option value="1">Active</option>

@@ -9,19 +9,19 @@ include_once "inc/code.php";
                     <div class="page-bar">
                         <div class="page-title-breadcrumb">
                             <div class=" pull-left">
-                                <div class="page-title">RICKSU</div>
+                                <div class="page-title">TRANSPORTATION COMPANY</div>
                             </div>
                             <ol class="breadcrumb page-breadcrumb pull-right">
                                 <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="dashboard.php">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
-                                <li class="active">RICKSU</li>
+                                <li class="active">TRANSPORTATION COMPANY</li>
                             </ol>
                         </div>
                     </div>
 
 			<div class="col-sm-12">
 				<div class="panel">
-					<div class="panel-heading panel-heading-red" align="center"><h4>Create RICKSU</h4></div>
+					<div class="panel-heading panel-heading-red" align="center"><h4>Create Transportation Company</h4></div>
 						<div class="panel-body">
 							<?php getMessage(@$msg,@$sts); ?>
 							<form action="php_action/custom_action.php" method="POST" role="form" id="formData">
@@ -29,26 +29,30 @@ include_once "inc/code.php";
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="">RICKSU Company Name</label>
+											<label for=""> Company Name</label>
 											<input type="text" class="form-control" id="ricksu_company_name" name="ricksu_company_name"> 
 											<input type="text" class="form-control d-none" id="ricksu_company_id" name="ricksu_company_id"> 
 										</div>
-										<div class="form-group">
+										<div class="form-group hidden" >
 											<label for="">RICKSU Fee</label>
 											<input type="text" class="form-control" id="ricksu_company_fee" name="ricksu_company_fee"> 
 										</div>
 										<div class="form-group">
-											<label for="">RICKSU Email</label>
+											<label for="">Email</label>
 											<input type="text" class="form-control" id="ricksu_company_email" name="ricksu_company_email"> 
 										</div>
 										<div class="form-group">
-											<label for="">RICKSU Website</label>
+											<label for=""> Website</label>
 											<input type="text" class="form-control" id="ricksu_company_website" name="ricksu_company_website"> 
+										</div>
+										<div class="form-group">
+											<label for="">Address</label>
+											<input type="text" class="form-control" id="ricksu_company_address" name="ricksu_company_address"> 
 										</div>
 									</div><!-- col -->
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="">Contact Person Name</label>
+											<label for="">Contact Person </label>
 											<input type="text" class="form-control" id="ricksu_company_contact_person" name="ricksu_company_contact_person"> 
 										</div>
 										<div class="form-group">
@@ -60,7 +64,7 @@ include_once "inc/code.php";
 											<input type="text" class="form-control" id="ricksu_company_fax" name="ricksu_company_fax"> 
 										</div>
 										<div class="form-group">
-											<label for="">RICKSU Status</label>
+											<label for="">Status</label>
 											<select class="form-control" id="ricksu_company_sts" name="ricksu_company_sts"> 
 												<option value="">~~SELECT~~</option>
 												<option value="1">Active</option>
@@ -85,8 +89,9 @@ include_once "inc/code.php";
 				<thead>
 			<tr>	
 				<th>ID</th>
-				<th>RICKSU</th>
-				<th>Fee</th>
+				<th>Company Name</th>
+				<th>Company Contact</th>
+				
 				<th>Status</th>
 				<th>Action</th>
 			</tr>

@@ -7,17 +7,7 @@
 
 
 <form action="" method="post" accept-charset="utf-8">
-
-
-
 	
-
-
-
-	
-
-
-
 <!-- start page content -->
 
 

@@ -7,6 +7,7 @@
 .error-main{
   background-color: #fff;
   box-shadow: 0px 10px 10px -10px #5D6572;
+  margin : auto;
 }
 .error-main h1{
   font-weight: bold;

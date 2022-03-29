@@ -4,9 +4,9 @@
   // $password = "nexcojap_website";
   // $dbname = "nexcojap_website";
 $localhost = "localhost";
- $username = "samziymw_nexcojapan";
- $password = "samziymw_nexcojapan";
- $dbname = "samziymw_nexcojapan";
+ $username = "root";
+ $password = "";
+ $dbname = "nexco_japan";
 
 $connect = new mysqli($localhost, $username, $password, $dbname);
 $dbc =  mysqli_connect($localhost, $username, $password, $dbname);

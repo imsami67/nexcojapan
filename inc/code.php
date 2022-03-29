@@ -57,7 +57,14 @@ return $q['ceo_id'];
 		 			'company_phone'=>$_POST['company_phone'],
 		 			'personal_phone'=> $_POST['personal_phone'],
 		 			'email' => $_POST['email'],
-		 			'tax' => $_POST['tax']
+		 			'tax' => $_POST['tax'],
+		 			'company_fax' => $_POST['company_fax'],
+					'company_whatsapp' => $_POST['company_whatsapp'],
+					'company_viber' => $_POST['company_viber'],
+					'company_fb' => $_POST['company_fb'],
+					'company_insta' => $_POST['company_insta'],
+					'company_snap' => $_POST['company_snap'],
+					'others' => $_POST['others'],
 			 		];
 		 		}else{
 		 			$data=[
@@ -66,7 +73,14 @@ return $q['ceo_id'];
 		 			'company_phone'=>$_POST['company_phone'],
 		 			'personal_phone'=> $_POST['personal_phone'],
 		 			'email' => $_POST['email'],
-		 			'tax' => $_POST['tax']
+		 			'tax' => $_POST['tax'],
+		 			'company_fax' => $_POST['company_fax'],
+					'company_whatsapp' => $_POST['company_whatsapp'],
+					'company_viber' => $_POST['company_viber'],
+					'company_fb' => $_POST['company_fb'],
+					'company_insta' => $_POST['company_insta'],
+					'company_snap' => $_POST['company_snap'],
+					'others' => $_POST['others'],
 			 		];
 		 		}
 
@@ -107,7 +121,14 @@ return $q['ceo_id'];
 		 			'company_phone'=>$_POST['company_phone'],
 		 			'personal_phone'=> $_POST['personal_phone'],
 		 			'email' => $_POST['email'],
-		 			'tax' => $_POST['tax']
+		 			'tax' => $_POST['tax'],
+		 			'company_fax' => $_POST['company_fax'],
+					'company_whatsapp' => $_POST['company_whatsapp'],
+					'company_viber' => $_POST['company_viber'],
+					'company_fb' => $_POST['company_fb'],
+					'company_insta' => $_POST['company_insta'],
+					'company_snap' => $_POST['company_snap'],
+					'others' => $_POST['others'],
 			 		];
 		 		}else{
 		 			$data=[
@@ -116,7 +137,14 @@ return $q['ceo_id'];
 		 			'company_phone'=>$_POST['company_phone'],
 		 			'personal_phone'=> $_POST['personal_phone'],
 		 			'email' => $_POST['email'],
-		 			'tax' => $_POST['tax']
+		 			'tax' => $_POST['tax'],
+		 			'company_fax' => $_POST['company_fax'],
+					'company_whatsapp' => $_POST['company_whatsapp'],
+					'company_viber' => $_POST['company_viber'],
+					'company_fb' => $_POST['company_fb'],
+					'company_insta' => $_POST['company_insta'],
+					'company_snap' => $_POST['company_snap'],
+					'others' => $_POST['others'],
 			 		];
 		 		}
 		 		

@@ -1,7 +1,7 @@
  <?php 
 include_once "includes/header.php";
 include_once "inc/code.php";
-$payment=mysqli_fetch_assoc(mysqli_query($dbc,"SELECT  payment.*,customers.* FROM payment INNER JOIN customers ON customers.customer_id=payment.customer_name WHERE payment.payment_id='".$_REQUEST['id']."' "));
+@$payment=mysqli_fetch_assoc(mysqli_query($dbc,"SELECT  payment.*,customers.* FROM payment INNER JOIN customers ON customers.customer_id=payment.customer_name WHERE payment.payment_id='".$_REQUEST['id']."' "));
 //$record=fetchRecord($dbc,"customers","customer_id",$payment['receving_bank']);
 
 ?>
@@ -140,3 +140,8 @@ $payment=mysqli_fetch_assoc(mysqli_query($dbc,"SELECT  payment.*,customers.* FRO
 <?php
 include_once "includes/footer.php";
 ?>
+<style type="text/css">
+	label{
+		float: left;
+	}
+</style>

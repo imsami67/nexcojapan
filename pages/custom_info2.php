@@ -129,7 +129,7 @@
 	          	    </div>
 	          	    <div class="form-group">
 
-	          	    	<label for="">Branch Address</label>
+	          	    	<label for=""> Address</label>
 
 	          	        <input type="text" class="form-control" id="customer_address" name="customer_address">
 
@@ -138,7 +138,7 @@
 	          	    	<div class="col-sm-6">
 	          	    		<div class="form-group">
 
-						<label for="">Branch Phone #</label>
+						<label for=""> Phone </label>
 
 						<input type="text" name="customer_phone1" id="customer_phone1" class="form-control customer_phone1">
 
@@ -147,7 +147,7 @@
 	          	    	<div class="col-sm-6">
 	          	    		<div class="form-group">
 
-	          	    	<label for="">Branch Fax #</label>
+	          	    	<label for=""> Fax </label>
 
 	          	        <input type="text" class="form-control customer_whatsapp1" id="customer_whatsapp1" name="customer_whatsapp1">
 
@@ -159,7 +159,7 @@
 	          	    	<div class="col-sm-6">
 	          	    		 <div class="form-group">
 
-	          	    	<label for="">Branch Email</label>
+	          	    	<label for=""> Email</label>
 
 	          	        <input type="text" class="form-control" id="customer_viber" name="customer_viber">
 
@@ -168,7 +168,7 @@
 	          	    	<div class="col-sm-6">
 	          	    		 <div class="form-group">
 
-	          	    	<label for="">Branch URL</label>
+	          	    	<label for=""> URL</label>
 
 	          	        <input type="text" class="form-control" id="customer_skype" name="customer_skype">
 
@@ -181,7 +181,7 @@
 
 	          	    <div class="form-group">
 
-	          	    	<label for="">Bank Status</label>	
+	          	    	<label for=""> Status</label>	
 
 						<select class="form-control" id="customer_active" name="customer_active">
 

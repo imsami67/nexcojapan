@@ -31,6 +31,21 @@
 						<input type="text" name="personal_phone" placeholder="Enter personal Phone" class="form-control" value="<?=@$fetchCompany['personal_phone']?>" /><br/>
 						<h4>Enter Company Tax  </h4>
 						<input type="text" name="tax" placeholder="Enter personal Phone" class="form-control" value="<?=@$fetchCompany['tax']?>" /><br/>
+
+						<h4>Enter Company fax  </h4>
+						<input type="text" name="company_fax" placeholder="Enter Company Fax" class="form-control" value="<?=@$fetchCompany['company_fax']?>" /><br/>
+						<h4>Enter company_whatsapp  </h4>
+						<input type="number" name="company_whatsapp" placeholder="Enter company_whatsapp" class="form-control" value="<?=@$fetchCompany['company_whatsapp']?>" /><br/>
+						<h4>Enter company_viber  </h4>
+						<input type="number" name="company_viber" placeholder="Enter company_viber" class="form-control" value="<?=@$fetchCompany['company_viber']?>" /><br/>
+						<h4>Enter Company facebook  </h4>
+						<input type="text" name="company_fb" placeholder="Enter Facebook" class="form-control" value="<?=@$fetchCompany['company_fb']?>" /><br/>
+						<h4>Enter Company Insta  </h4>
+						<input type="text" name="company_insta" placeholder="Enter company_insta" class="form-control" value="<?=@$fetchCompany['company_insta']?>" /><br/>
+						<h4>Enter company_snapchat  </h4>
+						<input type="text" name="company_snap" placeholder="Enter company_snap" class="form-control" value="<?=@$fetchCompany['company_snap']?>" /><br/>
+						<h4>Enter Others  </h4>
+						<input type="text" name="others" placeholder="Enter others" class="form-control" value="<?=@$fetchCompany['others']?>" /><br/>
 						<?=@$company_button; ?>
 					</form>
 				</div>

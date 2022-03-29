@@ -51,7 +51,7 @@ include_once "inc/code.php";
 									</datalist>
 								</div>
 								<div class="form-group">
-									<label for="">Vehicle Expense Name</label>
+									<label for=""> Expense Name</label>
 									<input type="text" class="form-control" id="vehicle_expense_name" name="vehicle_expense_name"> 
 									<input type="text" class="form-control d-none" id="vehicle_expense_id" name="vehicle_expense_id"> 
 								</div>

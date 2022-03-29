@@ -29,7 +29,7 @@ include_once "inc/code.php";
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="">RICKSU Company</label>
+											<label for="">Company Name</label>
 											<select class="form-control" required name="riksu_company_id" id="riksu_company_id">
 												<option>SELECT COMPANY</option>
 											<?php $get_company=get($dbc,"ricksu_company");
@@ -41,11 +41,11 @@ include_once "inc/code.php";
 											<input type="text" class="form-control d-none"  name="riksu_transportation"> 
 										</div>
 										<div class="form-group">
-											<label for="">FREE DAYS</label>
+											<label for="">Free Days</label>
 											<input type="number" min="1" class="form-control" id="free_days" name="free_days"> 
 										</div>
 										<div class="form-group">
-											<label for="">RUNNING FEE</label>
+											<label for="">Rolling</label>
 											<input type="number" required min="1" class="form-control" id="running_fee" name="running_fee"> 
 										</div>
 										
@@ -60,7 +60,7 @@ include_once "inc/code.php";
 											<input type="text" class="form-control" id="ricksu_port" name="ricksu_port"> 
 										</div>
 										<div class="form-group">
-											<label for="">NOT RUNNING FEE</label>
+											<label for="">Not Rolling</label>
 											<input type="number" required min="1" class="form-control" id="not_running" name="not_running"> 
 										</div>
 									

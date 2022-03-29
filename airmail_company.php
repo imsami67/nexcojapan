@@ -27,11 +27,20 @@ include_once "inc/code.php";
 							<form action="php_action/custom_action.php" method="POST" role="form" id="formData">
 								<div class="msg"></div>
 								<div class="row form-group">
-									<div class="col-sm-12">
+									 
+									<div class="col-sm-6">
 										
-									<label for="">Services Company</label>
+									<label for="">Company Name</label>
 									<input type="text" class="form-control" id="services_company_name" name="services_company_name" required> 
 									<input type="text" class="form-control d-none" id="services_company_id" name="services_company_id"> 
+								
+									</div>
+
+									<div class="col-sm-6">
+										
+									<label for="">Country </label>
+									<?=countrySelector('', "customer_country", "customer_country", "form-control customer_country")?>
+									 
 								
 									</div>
 								</div>
@@ -46,7 +55,7 @@ include_once "inc/code.php";
 
 									<div class="col-sm-6">
 										
-									<label for=""> Contact Number</label>
+									<label for="">Contact Number</label>
 									<input type="number" class="form-control" id="services_company_contact" name="services_company_contact" required> 
 									
 								
@@ -54,6 +63,14 @@ include_once "inc/code.php";
 								
 								</div>
 								<div class="row form-group">
+									<div class="col-sm-6">
+										
+									<label for=""> Phone Number</label>
+									<input type="text" class="form-control" id="services_company_phone" name="services_company_phone"> 
+									
+								
+									</div>
+
 									<div class="col-sm-6">
 										
 									<label for="">  Fax Number</label>
@@ -69,6 +86,13 @@ include_once "inc/code.php";
 									
 								
 									</div>
+									<div class="col-sm-6">
+										
+									<label for=""> Website</label>
+									<input type="text" class="form-control" id="services_company_website" name="services_company_website"> 
+
+								
+									</div>
 								
 								</div>
 								<div class=" row form-group">
@@ -78,10 +102,11 @@ include_once "inc/code.php";
 									</div>
 								</div>
 								<div class="row form-group">
+									
 									<div class="col-sm-6">
 										
-									<label for=""> Website</label>
-									<input type="text" class="form-control" id="services_company_website" name="services_company_website"> 
+									<label for=""> Note</label>
+									<input type="text" class="form-control" id="services_company_note" name="services_company_note"> 
 
 								
 									</div>
@@ -113,7 +138,8 @@ include_once "inc/code.php";
 				<th>ID</th>
 				<th>Services Company</th>
 				<th>Contact Person</th>
-				<th>Contact No.</th>
+				<th>Contact Details</th>
+				<th>Address</th>
 				<th>Status</th>
 				<th>Action</th>
 			</tr>

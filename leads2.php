@@ -17,6 +17,9 @@ include_once "includes/header.php";
   .modal-footer {
     background-color: #f9f9f9;
   }
+  label{
+  	text-align: left;
+  }
   </style>
 <!-- start page content -->
             <div class="page-content-wrapper">
@@ -612,7 +615,8 @@ span.multiselect-native-select select {
 	padding: 0
 }
 .multiselect-container>li>a.multiselect-all label {
-	font-weight: 700
+	font-weight: 700;
+
 }
 .multiselect-container>li.multiselect-group label {
 	margin: 0;
@@ -632,6 +636,7 @@ span.multiselect-native-select select {
 	cursor: pointer;
 	font-weight: 400;
 	padding: 3px 0 3px 30px
+
 }
 .multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
 	margin: 0
@@ -649,6 +654,10 @@ span.multiselect-native-select select {
 .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
 	margin-left: -20px;
 	margin-right: 0
+}
+label {
+	float:left ;
+
 }
 
 </style>

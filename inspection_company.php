@@ -27,17 +27,32 @@ include_once "inc/code.php";
 							<form action="php_action/custom_action.php" method="POST" role="form" id="formData">
 								<div class="msg"></div>
 								<div class="row form-group">
-									<div class="col-sm-6">
+									<div class="col-sm-3">
 										
-									<label for="">Inspection Company</label>
+									<label for="">Company Name</label>
 									<input type="text" class="form-control" id="inspection_company_name" name="inspection_company_name"> 
 									<input type="text" class="form-control d-none" id="inspection_company_id" name="inspection_company_id"> 
 								
 									</div>
+									<div class="col-sm-3">
+										
+									<label for="">Country</label>
+									 <?=countrySelector('', "customer_country", "customer_country", "form-control customer_country")?> 
+							
+								
+									</div>
 
-									<div class="col-sm-6">
+									<div class="col-sm-3">
 										
 									<label for="">Contact Person</label>
+									<input type="text" class="form-control" id="inspection_contact_person" name="inspection_contact_person"> 
+									
+								
+									</div>
+
+									<div class="col-sm-3">
+										
+									<label for="">Contact Number</label>
 									<input type="text" class="form-control" id="inspection_contact_person" name="inspection_contact_person"> 
 									
 								
@@ -45,47 +60,52 @@ include_once "inc/code.php";
 								
 								</div>
 								<div class="row form-group">
-									<div class="col-sm-6">
+									<div class="col-sm-3">
 										
-									<label for="">Inspection Company Fax Number</label>
+									<label for="">Phone</label>
+									<input type="text" class="form-control" id="inspection_phone" name="inspection_phone"> 
+									
+								
+									</div>
+
+									<div class="col-sm-3">
+										
+									<label for="">Fax </label>
 									<input type="text" class="form-control" id="inspection_fax" name="inspection_fax"> 
 									
 								
 									</div>
 
-									<div class="col-sm-6">
+									<div class="col-sm-3">
 										
-									<label for="">Inspection Company Email</label>
+									<label for=""> Email</label>
 									<input type="text" class="form-control" id="inspection_email" name="inspection_email"> 
+									
+								
+									</div>
+									<div class="col-sm-3">
+										
+									<label for=""> Website</label>
+									<input type="text" class="form-control" id="inspection_website" name="inspection_website"> 
 									
 								
 									</div>
 								
 								</div>
 								<div class=" row form-group">
-									<div class="col-sm-12">
-										<label>Inspection Company Address</label>
-										<textarea name="inspection_address" id="inspection_address" class="form-control"></textarea>
-									</div>
-								</div>
-								<div class="row form-group">
 									<div class="col-sm-6">
-										
-									<label for="">Inspection Company Website</label>
-									<input type="text" class="form-control" id="inspection_website" name="inspection_website"> 
-
-								
+										<label>Address</label>
+										<textarea name="inspection_address" id="inspection_address" class="form-control" placeholder="Enter details using ',' "></textarea>
 									</div>
-
 									<div class="col-sm-6">
-										<label for="">Inspection Company Status</label>
+										<label for=""> Status</label>
 									<select class="form-control" id="inspection_company_sts" name="inspection_company_sts"> 
 										<option value="">~~SELECT~~</option>
 										<option value="1">Active</option>
 										<option value="0">Inactive</option>
 									</select></div>
-								
 								</div>
+								
 								
 							
 								<button type="submit" class="btn btn-primary" class="saveData">Save</button>
